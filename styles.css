@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat';
+}
+html
+,body{
+    height: 100%;
+    width: 100%;
+    background-color: #FFFFFF;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    width: 100%;
+    height: 20%;
+    flex-wrap: wrap;
+}
+.menu p{
+    display:inline;
+    border: 2px solid black;
+    padding: 4px;
+    border-radius: 50px;
+}
+.logo i{
+    font-size: small;
+    color: white;
+    background-color: #FF4F2B;
+    border-radius: 50%;
+    padding: 4px;
+}
+.login p{
+    display:inline;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 50px;
+    font-size: small;
+}
+#signup{
+    color: #fff;
+    background-color: #FF4F2B;
+    border-color: #FF4F2B;
+    padding: 5px;
+}
+main{
+    height: 40%;
+}
+main h1{
+    font-weight: 300;
+    font-size: 150px;
+    letter-spacing: -10px;
+   text-align: center;
+   position: relative;
+   top: 50%;
+}
+
+.images img{
+    object-fit: cover;
+    position: absolute;
+    z-index: 1;
+    left: 50%;
+    top: 60%;
+    transform: translate(-50%, -50%);
+    height: 350px;
+    width: 250px;
+    border-radius: 20px; 
+}
+.images img:nth-child(1){
+    transform: translate(-50%, -50%) rotate(-30deg);
+    animation: animation-img-6 3s 6s forwards; 
+}
+.images img:nth-child(2){
+    transform: translate(-50%, -50%) rotate(-25deg);
+    animation: animation-img-5 3s 5s forwards; 
+}
+.images img:nth-child(3){
+    transform: translate(-50%, -50%) rotate(-20deg);
+    animation: animation-img-4 3s 4s forwards; 
+}
+.images img:nth-child(4){
+    transform: translate(-50%, -50%) rotate(-15deg);
+    animation: animation-img-3 3s 3s forwards; 
+}
+.images img:nth-child(5){
+    transform: translate(-50%, -50%) rotate(-10deg);
+    animation: animation-img-2 3s 2s forwards; 
+}
+.images img:nth-child(6){
+    transform: translate(-50%, -50%) rotate(0deg);
+    animation: animation-img-1 3s 1s forwards; 
+}
+
+@keyframes animation-img-1 {
+    0% {
+        transform: translate(-50%, -50%) rotate(0deg); /* Initial state */
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(-5deg); 
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg); 
+        top: 0%;
+        opacity: 0; 
+        visibility: hidden; 
+    }
+}
+@keyframes  animation-img-2 {
+    0% {
+        transform: translate(-50%, -50%) rotate(-10deg); /* Initial state */
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(-5deg); 
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg); 
+        top: 0%;
+        opacity: 0; 
+        visibility: hidden; 
+    }
+}
+@keyframes animation-img-3 {
+    0% {
+        transform: translate(-50%, -50%) rotate(-15deg); /* Initial state */
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(-5deg); 
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg); 
+        top: 0%;
+        opacity: 0; 
+        visibility: hidden; 
+    }
+}
+@keyframes animation-img-4  {
+    0% {
+        transform: translate(-50%, -50%) rotate(-20deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(-5deg); 
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg); 
+        top: 0%;
+        opacity: 0; 
+        visibility: hidden; 
+    }
+}
+@keyframes animation-img-5 {
+    0% {
+        transform: translate(-50%, -50%) rotate(-25deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(-5deg); 
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg); 
+        top: 0%;
+        opacity: 0; 
+        visibility: hidden; 
+    }
+}
+@keyframes animation-img-6 {
+    0% {
+        transform: translate(-50%, -50%) rotate(-30deg);
+    }
+    50% {
+        transform: translate(-50%, -50%) rotate(-5deg); 
+    }
+    100% {
+        transform: translate(-50%, -50%) rotate(0deg); 
+        top: 0%;
+        opacity: 0; 
+        visibility: hidden; 
+    }
+}
+@media (max-width:800px) {
+    main h1{
+        font-size: 80px;
+    }
+    .images img{
+        height: 300px;
+        width: 200px;
+    }
+    .login{
+        display: none;
+    }
+}
